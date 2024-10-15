@@ -43,6 +43,7 @@ public class AspectV4 {
                 String string = joinPoint.toString();
                 System.out.println("string = " + string);
                 log.info("[트랜잭션 끝] {}", joinPoint.getSignature());
+                //추가
                 return result;
             } catch (Exception e) {
                 log.info("[트랜잭션 롤백] {}", joinPoint.getSignature());
